@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application - Workzen Erp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="task.png" rel="icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> <img src="task.png" alt="">Workzen Erp </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="admin.html">Admin Panel</a></li>
+            <li><a href="client.html">Client Portal</a></li>
+            <li><a href="leave.html">Leave Application</a></li>
+            <li><a href="#" id="logout-button">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container leave-container">
+        <h1>Leave Application Form</h1>
+        <form id="leave-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" required></textarea>
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" required>
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="leave-message"></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Workzen Erp. All rights reserved.</p>
+    </footer>
+
+    <script src="leave.js"></script>
+</body>
+</html>

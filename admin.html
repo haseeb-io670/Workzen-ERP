@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Workzen Erp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="task.png" rel="icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> <img src="task.png" alt="">Workzen Erp</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="admin.html">Admin Panel</a></li>
+            <li><a href="client.html">Client Portal</a></li>
+            <li><a href="leave.html">Leave Application</a></li>
+            <li><a href="#" id="logout-button">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container admin-container">
+        <h1>Admin Panel</h1>
+        <h2>Upload Tasks and Documents</h2>
+        <form id="upload-form">
+            <label for="task">Task Description:</label>
+            <input type="text" id="task" required>
+            <label for="document">Upload Document:</label>
+            <input type="file" id="document" required>
+            <button type="submit">Upload</button>
+        </form>
+        <p id="upload-message"></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Workzen Erp. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>

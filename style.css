@@ -1,0 +1,239 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 35px;
+}
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+.time-tracker {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.time-tracker h2 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.time-tracker p {
+    font-size: 18px;
+}
+
+
+.admin-container, .client-container, .leave-container {
+    padding: 20px;
+}
+
+.uploaded-doc {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-links li:first-child {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li:first-child label {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links li:first-child input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        text-align: left;
+        background-color: #0056b3;
+        border-radius: 5px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 14px;
+    }
+
+    .time-tracker h2 {
+        font-size: 20px;
+    }
+
+    .time-tracker p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    form label {
+        font-size: 12px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 12px;
+    }
+
+    .time-tracker h2 {
+        font-size: 18px;
+    }
+
+    .time-tracker p {
+        font-size: 14px;
+    }
+}
